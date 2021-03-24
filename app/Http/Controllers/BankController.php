@@ -36,7 +36,7 @@ class BankController extends Controller
     public function store(Request $request)
     {
         $bank = Bank::create($request->all());
-        return response()->json(['新增使用者成功'], 200);
+        return response()->json(['新增使用者成功'], 201);
     }
 
     /**
@@ -85,6 +85,6 @@ class BankController extends Controller
     {
         Bank::find($id)->delete();
  
-        return response()->json(["刪除成功"], 200);
+        return response()->json(["刪除成功"], 204);
     }
 }

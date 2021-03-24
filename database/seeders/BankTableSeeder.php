@@ -18,7 +18,25 @@ class BankTableSeeder extends Seeder
             'name' => 'Barry',
             'password' => '12345',
             'number' => '20210324',
-            'money' => '35000'
+            'money' => '75000'
+        ]);
+        Bank::create([
+            'name' => 'Apple',
+            'password' => '11111',
+            'number' => '20210002',
+            'money' => '55000'
+        ]);
+        Bank::create([
+            'name' => 'Nick',
+            'password' => '11111',
+            'number' => '20210003',
+            'money' => '65000'
+        ]);
+        Bank::create([
+            'name' => 'Sam',
+            'password' => '11111',
+            'number' => '20210004',
+            'money' => '80000'
         ]);
     }
 }
